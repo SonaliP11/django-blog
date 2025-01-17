@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-_2!!!lo5i$7ms))h&f=j%_w+$(hyv@6aji+m#r^i1wqolm)ktd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost','.herokuapp.com']
 
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_summernote',
-    'blog', # Add the blog app to the list of installed apps
+    'blog',
+    'about',
 ]
 
 MIDDLEWARE = [
